@@ -8,3 +8,4 @@ spacy==3.5.0
 openpyxl
 telebot
 numpy==1.23.5
+python-dotenv
