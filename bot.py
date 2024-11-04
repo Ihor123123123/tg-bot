@@ -7,10 +7,13 @@ import os
 from pydub import AudioSegment
 import speech_recognition as sr
 import re
+from dotenv import load_dotenv
 
-# Токен бота
-TOKEN = '7917493776:AAHXc2aoYTdKKldmottOkVKZcJvqij7gQkw'
+# Загружаем переменные окружения из .env файла
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 bot = telebot.TeleBot(TOKEN)
+
 
 # Загрузка модели spaCy для русского языка
 nlp = spacy.load("ru_core_news_sm")
