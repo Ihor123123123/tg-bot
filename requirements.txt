@@ -7,4 +7,4 @@ ffmpeg-python
 spacy==3.5.0
 openpyxl
 telebot
-numpy==1.21.6
+numpy==1.23.5
