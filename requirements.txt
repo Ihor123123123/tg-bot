@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+SpeechRecognition
+pydub
+pandas
+openpyxl
+ffmpeg-python
