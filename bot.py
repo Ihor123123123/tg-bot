@@ -8,11 +8,13 @@ from pydub import AudioSegment
 import speech_recognition as sr
 import re
 from dotenv import load_dotenv
+import os
 
 # Загружаем переменные окружения из .env файла
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
 bot = telebot.TeleBot(TOKEN)
+print("Bot token:", TOKEN)  # This will print 'None' if the token is not loaded
 
 
 # Загрузка модели spaCy для русского языка
